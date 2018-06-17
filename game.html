@@ -12,44 +12,74 @@
         <header>
             <h1 class="center">遊戲類</h1>
         </header> 
+        <br><br><br><br><br>
         <section class="content">
-            <h2 class="center">類別一</h2>
-            <ol type="1">
-                <li><input type="radio" name="a"></li><br>
-                <li><input type="radio" name="a"></li><br>
-                <li><input type="radio" name="a"></li><br>
-                <li><input type="radio" name="a"></li><br>
+            <h2 class="center" id="q1">問題一</h2>
+            <ol type="A">
+                <li><input type="radio" name="a"><a id="q1a">test</a></li><br>
+                <li><input type="radio" name="a"><a id="q1b"></a></li><br>
+                <li><input type="radio" name="a"><a id="q1c"></a></li><br>
+                <li><input type="radio" name="a"><a id="q1d"></a></li><br>
             </ol>
-        </section>
+        </section><br>
     
         <section class="content">
-            <h2 class="center">類別二</h2>
-            <ol type="1">
-                <li><input type="radio" name="b"></li><br>
-                <li><input type="radio" name="b"></li><br>
-                <li><input type="radio" name="b"></li><br>
-                <li><input type="radio" name="b"></li><br>
+            <h2 class="center" id="q2">問題二</h2>
+            <ol type="A">
+                <li><input type="radio" name="b"><a id="q2a"></a></li><br>
+                <li><input type="radio" name="b"><a id="q2b"></a></li><br>
+                <li><input type="radio" name="b"><a id="q2c"></a></li><br>
+                <li><input type="radio" name="b"><a id="q2d"></a></li><br>
             </ol>
-        </section>
+        </section><br>
+           
+        <section class="content">
+            <h2 class="center" id="q3">問題三</h2>
+            <ol type="A">
+                <li><input type="radio" name="c"><a id="q3a"></a></li><br>
+                <li><input type="radio" name="c"><a id="q3b"></a></li><br>
+                <li><input type="radio" name="c"><a id="q3c"></a></li><br>
+                <li><input type="radio" name="c"><a id="q3d"></a></li><br>
+            </ol>
+        </section><br>
     
         <section class="content">
-            <h2 class="center">類別三</h2>
-            <ol type="1">
-                <li><input type="radio" name="c"></li><br>
-                <li><input type="radio" name="c"></li><br>
-                <li><input type="radio" name="c"></li><br>
-                <li><input type="radio" name="c"></li><br>
+            <h2 class="center" id="q4">問題四</h2>
+            <ol type="A">
+                <li><input type="radio" name="d"><a id="q4a"></a></li><br>
+                <li><input type="radio" name="d"><a id="q4b"></a></li><br>
+                <li><input type="radio" name="d"><a id="q4c"></a></li><br>
+                <li><input type="radio" name="d"><a id="q4d"></a></li><br>
             </ol>
-        </section>
-    
-        <section class="content">
-            <h2 class="center">類別四</h2>
-            <ol type="1">
-                <li><input type="radio" name="d"></li><br>
-                <li><input type="radio" name="d"></li><br>
-                <li><input type="radio" name="d"></li><br>
-                <li><input type="radio" name="d"></li><br>
-            </ol>
-        </section>
+        </section><br><br>
+        <div style="text-align: center">
+            <input type="submit" value="Finish" id="finish">
+        </div>
     </body>
 </html>
+<script>
+    // var win_old = window.prompt("How old are you ?\nFor example: 18");
+    // var win_gender = window.prompt("What is your gender ?\n0 is man\n1 is woman");
+    var win_alert = window.alert("You will have four questions !!!");
+    window.onload = gen_que;
+    document.getElementById("q1a").innerHTML="test Change";
+     
+    function gen_que(){
+        switch(Math.floor(Math.random()*4+1)){
+            case 1:
+                document.getElementById("q1").innerHTML="Question 1: 你媽跟你老婆掉到水裡面，你會先救誰?";
+                document.getElementById("q1a").innerHTML="你媽";
+                document.getElementById("q1b").innerHTML="你老婆";
+                document.getElementById("q1c").innerHTML="都不救";
+                document.getElementById("q1d").innerHTML="看心情";
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+        }
+    }
+    
+</script>
