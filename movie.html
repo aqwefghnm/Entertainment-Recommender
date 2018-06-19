@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Choosing Game</title>
+        <link rel="stylesheet" type="text/css" href="style_question.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="center">遊戲類</h1>
+        </header> 
+        <br><br><br><br><br>
+        <form action="./movie_result.php" method="POST">
+            <section class="content">
+                <h2 class="center" id="q1">問題一</h2>
+                <ol type="A">
+                    <li><input type="radio" name="q1" id="qq1a"><a id="q1a">test</a></li><br>
+                    <li><input type="radio" name="q1" id="qq1b"><a id="q1b"></a></li><br>
+                    <li><input type="radio" name="q1" id="qq1c"><a id="q1c"></a></li><br>
+                    <li><input type="radio" name="q1" id="qq1d"><a id="q1d"></a></li><br>
+                </ol>
+            </section><br>
+    
+            <section class="content">
+                <h2 class="center" id="q2">問題二</h2>
+                <ol type="A">
+                    <li><input type="radio" name="q2" id="qq2a"><a id="q2a"></a></li><br>
+                    <li><input type="radio" name="q2" id="qq2b"><a id="q2b"></a></li><br>
+                    <li><input type="radio" name="q2" id="qq2c"><a id="q2c"></a></li><br>
+                    <li><input type="radio" name="q2" id="qq2d"><a id="q2d"></a></li><br>
+                </ol>
+            </section><br>
+           
+            <section class="content">
+                <h2 class="center" id="q3">問題三</h2>
+                <ol type="A">
+                    <li><input type="radio" name="q3" id="qq3a"><a id="q3a"></a></li><br>
+                    <li><input type="radio" name="q3" id="qq3b"><a id="q3b"></a></li><br>
+                    <li><input type="radio" name="q3" id="qq3c"><a id="q3c"></a></li><br>
+                    <li><input type="radio" name="q3" id="qq3d"><a id="q3d"></a></li><br>
+                </ol>
+            </section><br>
+    
+            <section class="content">
+                <h2 class="center" id="q4">問題四</h2>
+                <ol type="A">
+                    <li><input type="radio" name="q4" id="qq4a"><a id="q4a"></a></li><br>
+                    <li><input type="radio" name="q4" id="qq4b"><a id="q4b"></a></li><br>
+                    <li><input type="radio" name="q4" id="qq4c"><a id="q4c"></a></li><br>
+                    <li><input type="radio" name="q4" id="qq4d"><a id="q4d"></a></li><br>
+                </ol>
+            </section><br><br>
+            <div style="text-align: center">
+                <input  type="submit" value="Finish" id="finish">
+            </div>
+        </form>
+    </body>
+</html>
+<script>
+    // var win_old = window.prompt("How old are you ?\nFor example: 18");
+    // var win_gender = window.prompt("What is your gender ?\n0 is man\n1 is woman");
+    var win_alert = window.alert("You will have four questions !!!");
+    window.onload = gen_que;
+    document.getElementById("q1a").innerHTML="test Change";
+     
+    function gen_que(){
+        // Math.floor(Math.random()*4+1)
+        switch(1){
+            case 1:
+                document.getElementById("q1").innerHTML="Question 1: 當你一覺醒來，你希望以下什麼事情發生?";
+                document.getElementById("q1a").innerHTML="有機會能搬離原本環境";
+                document.getElementById("q1b").innerHTML="抽中豪華遊輪mix無人島渡假九日遊";
+                document.getElementById("q1c").innerHTML="收到下落不明的父親寄來的信件";
+                document.getElementById("q1d").innerHTML="什麼事情都沒發生，是個平常的一天";
+                document.getElementById("qq1a").setAttribute('value', "032020");
+                document.getElementById("qq1b").setAttribute('value', "110021");
+                document.getElementById("qq1c").setAttribute('value', "203200");
+                document.getElementById("qq1d").setAttribute('value', "002103");
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+        }
+        switch(1){
+            case 1:
+                document.getElementById("q2").innerHTML="Question 2: 如果說這世界有個天大的秘密，你覺得會是什麼?";
+                document.getElementById("q2a").innerHTML="千萬別惹松鼠，因為他們操控著整個世界";
+                document.getElementById("q2b").innerHTML="你一直在等待的那個人離你不遠囉";
+                document.getElementById("q2c").innerHTML="你猜對了，其實一切由0和1構成的";
+                document.getElementById("q2d").innerHTML="只要你敢做夢，世界就會為你鋪好道路";
+                document.getElementById("qq2a").setAttribute('value', "100103");
+                document.getElementById("qq2b").setAttribute('value', "031020");
+                document.getElementById("qq2c").setAttribute('value', "201310");
+                document.getElementById("qq2d").setAttribute('value', "023001");
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+        }
+    }
+    
+</script>
